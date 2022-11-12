@@ -1,0 +1,13 @@
+node_modules
+package-lock.json
+yarn.lock
+
+# build artifacts
+build
+.gitlab-compressed-size-action-report.json
+
+# coverage
+coverage
+junit.xml
+merged-coverage.json
+cobertura-coverage.xml

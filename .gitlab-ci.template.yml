@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json
+
+.report-file-size-changes:
+  script:
+    - >
+      npx gitlab-compressed-size-action diff $CI_FILE_SIZE_CHANGE_PATTERN \
+          --out-file=./.gitlab-compressed-size-action-report.json \
+          --auth $CI_FILE_SIZE_CHANGE_TOKEN \
+          $CI_FILE_SIZE_OPTIONS
+  artifacts:
+    paths:
+      - .gitlab-compressed-size-action-report.json
