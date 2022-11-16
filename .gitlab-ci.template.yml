@@ -3,10 +3,10 @@
 .gitlab-compressed-size-action:
   script:
     - >
-      npx gitlab-compressed-size-action diff $CI_FILE_SIZE_CHANGE_PATTERN \
+      npx gitlab-compressed-size-action diff $FILE_SIZE_CHANGE_PATTERN \
           --out-file=./.gitlab-compressed-size-action-report.json \
-          --auth $CI_FILE_SIZE_CHANGE_TOKEN \
-          $CI_FILE_SIZE_OPTIONS
+          --auth $FILE_SIZE_CHANGE_TOKEN \
+          $FILE_SIZE_CHANGE_OPTIONS
   artifacts:
     paths:
       - .gitlab-compressed-size-action-report.json
