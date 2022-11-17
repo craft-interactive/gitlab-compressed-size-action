@@ -1,6 +1,6 @@
 {
 	"name": "gitlab-compressed-size-action",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A GitLab CI job that will post file-size changes on your pull-requests as comments",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
