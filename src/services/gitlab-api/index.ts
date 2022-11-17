@@ -157,9 +157,14 @@ class GitLabAPI {
 		);
 
 		if (res.statusCode !== 200) {
+			const { body, statusCode } = res;
+
 			this.services.logger.warn(
 				`Failed to retrieve the job artifacts for id "${jobId}".`,
-				{ statusCode: res.statusCode, body: res.body }
+				{
+					statusCode,
+					body: body instanceof Buffer ? body.toString("utf8") : body,
+				}
 			);
 			return [];
 		}
