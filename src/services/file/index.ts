@@ -1,20 +1,31 @@
 import glob from "fast-glob";
 import * as fs from "node:fs/promises";
 import * as process from "node:process";
+import * as gzip from "gzip-size";
 
 type FileStat = { path: string; bytes: number };
 
 const getFileStats = async (filepPatterns: string[]) => {
 	const paths = await glob(filepPatterns);
 	const stats = await Promise.all(
-		paths.map((path) =>
-			fs.stat(path).then(
-				(stat): FileStat => ({
-					path: path.replace(process.cwd() + "/", ""),
-					bytes: stat.size,
-				})
-			)
-		)
+		paths.map(async (path): Promise<FileStat> => {
+			const isCompressed = path.endsWith(".zip") || path.endsWith(".tar.gz");
+			const relativePath = path.replace(process.cwd() + "/", "");
+
+			if (!isCompressed) {
+				return {
+					path: relativePath,
+					bytes: await gzip.file(path),
+				};
+			}
+
+			const stat = await fs.stat(path);
+
+			return {
+				path: relativePath,
+				bytes: stat.size,
+			};
+		})
 	);
 
 	return stats.sort((a, b) => a.path.localeCompare(b.path));

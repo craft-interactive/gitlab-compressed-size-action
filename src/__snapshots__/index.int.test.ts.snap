@@ -5,14 +5,14 @@ exports[`diff() should not fail if retrival of the previous fs.stats from the Gi
   {
     "change": {
       "percent": 100,
-      "pretty": "+6.1 KB",
-      "raw": 6251,
+      "pretty": "+1.71 KB",
+      "raw": 1754,
     },
     "id": "src/mocks/files/normalize.css",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "6.1 KB",
-      "raw": 6251,
+      "pretty": "1.71 KB",
+      "raw": 1754,
     },
     "status": "added",
   },
@@ -33,14 +33,14 @@ exports[`diff() should not fail if retrival of the previous fs.stats from the Gi
   {
     "change": {
       "percent": 100,
-      "pretty": "+8 KB",
-      "raw": 8192,
+      "pretty": "+3.61 KB",
+      "raw": 3695,
     },
     "id": "summary",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "8 KB",
-      "raw": 8192,
+      "pretty": "3.61 KB",
+      "raw": 3695,
     },
     "status": "added",
   },
@@ -52,14 +52,14 @@ exports[`diff() should read the current fs.stats from disk and write them to the
   {
     "change": {
       "percent": 100,
-      "pretty": "+6.1 KB",
-      "raw": 6251,
+      "pretty": "+1.71 KB",
+      "raw": 1754,
     },
     "id": "src/mocks/files/normalize.css",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "6.1 KB",
-      "raw": 6251,
+      "pretty": "1.71 KB",
+      "raw": 1754,
     },
     "status": "added",
   },
@@ -80,14 +80,14 @@ exports[`diff() should read the current fs.stats from disk and write them to the
   {
     "change": {
       "percent": 100,
-      "pretty": "+8 KB",
-      "raw": 8192,
+      "pretty": "+3.61 KB",
+      "raw": 3695,
     },
     "id": "summary",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "8 KB",
-      "raw": 8192,
+      "pretty": "3.61 KB",
+      "raw": 3695,
     },
     "status": "added",
   },
@@ -98,17 +98,17 @@ exports[`diff() should retreive the previous fs.stats from the GitLab API and cr
 [
   {
     "change": {
-      "percent": 0,
-      "pretty": "0 Bytes",
-      "raw": 0,
+      "percent": 71.94,
+      "pretty": "-4.39 KB",
+      "raw": -4497,
     },
     "id": "src/mocks/files/normalize.css",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "6.1 KB",
-      "raw": 6251,
+      "pretty": "1.71 KB",
+      "raw": 1754,
     },
-    "status": "unchanged",
+    "status": "decreased",
   },
   {
     "change": {
@@ -126,17 +126,17 @@ exports[`diff() should retreive the previous fs.stats from the GitLab API and cr
   },
   {
     "change": {
-      "percent": 0,
-      "pretty": "0 Bytes",
-      "raw": 0,
+      "percent": 54.9,
+      "pretty": "-4.39 KB",
+      "raw": -4497,
     },
     "id": "summary",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "8 KB",
-      "raw": 8192,
+      "pretty": "3.61 KB",
+      "raw": 3695,
     },
-    "status": "unchanged",
+    "status": "decreased",
   },
 ]
 `;
@@ -146,14 +146,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+6.1 KB",
-      "raw": 6251,
+      "pretty": "+1.71 KB",
+      "raw": 1754,
     },
     "id": "src/mocks/files/normalize.css",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "6.1 KB",
-      "raw": 6251,
+      "pretty": "1.71 KB",
+      "raw": 1754,
     },
     "status": "added",
   },
@@ -174,14 +174,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+8 KB",
-      "raw": 8192,
+      "pretty": "+3.61 KB",
+      "raw": 3695,
     },
     "id": "summary",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "8 KB",
-      "raw": 8192,
+      "pretty": "3.61 KB",
+      "raw": 3695,
     },
     "status": "added",
   },
@@ -193,14 +193,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+6.1 KB",
-      "raw": 6251,
+      "pretty": "+1.71 KB",
+      "raw": 1754,
     },
     "id": "src/mocks/files/normalize.css",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "6.1 KB",
-      "raw": 6251,
+      "pretty": "1.71 KB",
+      "raw": 1754,
     },
     "status": "added",
   },
@@ -221,14 +221,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+8 KB",
-      "raw": 8192,
+      "pretty": "+3.61 KB",
+      "raw": 3695,
     },
     "id": "summary",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "8 KB",
-      "raw": 8192,
+      "pretty": "3.61 KB",
+      "raw": 3695,
     },
     "status": "added",
   },
@@ -240,14 +240,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+6.1 KB",
-      "raw": 6251,
+      "pretty": "+1.71 KB",
+      "raw": 1754,
     },
     "id": "src/mocks/files/normalize.css",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "6.1 KB",
-      "raw": 6251,
+      "pretty": "1.71 KB",
+      "raw": 1754,
     },
     "status": "added",
   },
@@ -268,14 +268,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+8 KB",
-      "raw": 8192,
+      "pretty": "+3.61 KB",
+      "raw": 3695,
     },
     "id": "summary",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "8 KB",
-      "raw": 8192,
+      "pretty": "3.61 KB",
+      "raw": 3695,
     },
     "status": "added",
   },
@@ -287,14 +287,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+6.1 KB",
-      "raw": 6251,
+      "pretty": "+1.71 KB",
+      "raw": 1754,
     },
     "id": "src/mocks/files/normalize.css",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "6.1 KB",
-      "raw": 6251,
+      "pretty": "1.71 KB",
+      "raw": 1754,
     },
     "status": "added",
   },
@@ -315,14 +315,14 @@ exports[`diff() should retry the retrival from the GitLab API if the last pipeli
   {
     "change": {
       "percent": 100,
-      "pretty": "+8 KB",
-      "raw": 8192,
+      "pretty": "+3.61 KB",
+      "raw": 3695,
     },
     "id": "summary",
     "isBelowThreshold": true,
     "size": {
-      "pretty": "8 KB",
-      "raw": 8192,
+      "pretty": "3.61 KB",
+      "raw": 3695,
     },
     "status": "added",
   },

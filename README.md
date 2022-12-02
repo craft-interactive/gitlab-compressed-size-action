@@ -26,7 +26,7 @@ Once this is done, simply integrate the action in your `.gitlab-ci.yml`, e.g.
 
 ```yaml
 include:
-  - remote: https://raw.githubusercontent.com/craft-interactive/gitlab-compressed-size-action/v1.0.0/.gitlab-ci.template.yml
+  - remote: https://raw.githubusercontent.com/craft-interactive/gitlab-compressed-size-action/v1.1.0/.gitlab-ci.template.yml
 
 report-file-size-changes:
   extends:

@@ -364,7 +364,7 @@ describe("diff()", () => {
 				auth: "my-gitlab-token",
 				reporters: ["gitlab-pr-note"],
 				thresholds: {
-					each: "6 KB",
+					each: "1 KB",
 				},
 			});
 		} catch (err) {
@@ -395,7 +395,7 @@ describe("diff()", () => {
 				auth: "my-gitlab-token",
 				reporters: ["gitlab-pr-note"],
 				thresholds: {
-					overall: "7 KB",
+					overall: "2 KB",
 				},
 			});
 		} catch (err) {
